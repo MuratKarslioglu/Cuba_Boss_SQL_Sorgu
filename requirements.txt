@@ -1,0 +1,17 @@
+-r requirements-core.txt
+
+# --- Model / egitim yigini (Faz 3+) ---
+torch>=2.3
+transformers>=4.44
+accelerate>=0.33
+peft>=0.12
+trl>=0.9
+datasets>=2.20
+
+# --- Servis (Faz 6) ---
+fastapi>=0.112
+uvicorn[standard]>=0.30
+
+# bitsandbytes yalnizca Linux/CUDA uzerinde calisir; macOS/MPS'te kurulmaz.
+# QLoRA bu nedenle opsiyoneldir (spec §30).
+bitsandbytes>=0.43; sys_platform == "linux"

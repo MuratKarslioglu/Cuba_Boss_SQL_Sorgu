@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Test / arac cache
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Ortam
+.env
+
+# Model ciktilari ve checkpointler
+models/*
+!models/.gitkeep
+
+# Benchmark ciktilari
+benchmarks/
+
+# Dataset dosyalari repoda tutulmaz (ayrica saglanir)
+datasets/*.jsonl
+
+# Harici (Kaggle/GitHub) kaynakli ham/donusturulmus veri - lisans netlesene kadar
+# hicbir zaman commit edilmez (bkz. datasets/external/LICENSE_NOTES.md)
+datasets/external/
+
+# TURSpider/TUR2SQL'den turetilen dagilim-disi (OOD) degerlendirme seti -
+# yalniz benchmark icin, egitime asla dahil edilmez
+datasets/ood_eval/
+
+# macOS
+.DS_Store

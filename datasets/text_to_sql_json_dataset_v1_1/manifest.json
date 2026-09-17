@@ -1,0 +1,122 @@
+{
+  "dataset_name": "Turkish Text to SQL-JSON Extractor V1",
+  "version": "1.1",
+  "seed": 42,
+  "total_examples": 1000,
+  "split_counts": {
+    "train": 700,
+    "validation": 150,
+    "test": 150
+  },
+  "level_counts": {
+    "train": {
+      "L6": 72,
+      "L3": 140,
+      "L2": 175,
+      "L1": 139,
+      "L5": 69,
+      "L4": 105
+    },
+    "validation": {
+      "L4": 22,
+      "L1": 31,
+      "L2": 38,
+      "L3": 30,
+      "L5": 14,
+      "L6": 15
+    },
+    "test": {
+      "L3": 30,
+      "L5": 17,
+      "L2": 37,
+      "L1": 30,
+      "L4": 23,
+      "L6": 13
+    }
+  },
+  "operation_counts": {
+    "train": {
+      "count": 285,
+      "sum": 249,
+      "average": 108,
+      "max": 14,
+      "select": 17,
+      "min": 27
+    },
+    "validation": {
+      "sum": 57,
+      "min": 2,
+      "max": 9,
+      "count": 63,
+      "average": 17,
+      "select": 2
+    },
+    "test": {
+      "sum": 60,
+      "count": 46,
+      "average": 24,
+      "select": 8,
+      "max": 7,
+      "min": 5
+    }
+  },
+  "filter_operator_counts": {
+    "train": {
+      "eq": 905,
+      "gt": 15,
+      "contains": 14,
+      "lte": 25,
+      "between": 96,
+      "neq": 15,
+      "in": 14,
+      "gte": 33
+    },
+    "validation": {
+      "eq": 194,
+      "between": 21,
+      "neq": 3,
+      "gte": 7,
+      "contains": 3,
+      "gt": 3,
+      "lte": 5,
+      "in": 3
+    },
+    "test": {
+      "eq": 194,
+      "between": 16,
+      "gte": 11,
+      "in": 3,
+      "contains": 3,
+      "neq": 2,
+      "lte": 6,
+      "gt": 2
+    }
+  },
+  "advanced_family_counts": {
+    "train": {
+      "threshold": 15,
+      "contains_customer": 14,
+      "complex_top_product": 14,
+      "neq_status": 15,
+      "in_products": 14
+    },
+    "validation": {
+      "neq_status": 3,
+      "complex_top_product": 3,
+      "contains_customer": 3,
+      "threshold": 3,
+      "in_products": 3
+    },
+    "test": {
+      "in_products": 3,
+      "contains_customer": 3,
+      "neq_status": 2,
+      "threshold": 2,
+      "complex_top_product": 3
+    }
+  },
+  "duplicate_input_count": 0,
+  "semantic_signature_leakage": [],
+  "validation_errors": [],
+  "validation_passed": true
+}

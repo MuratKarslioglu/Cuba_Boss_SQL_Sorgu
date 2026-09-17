@@ -1,0 +1,42 @@
+{
+  "title": "QueryExtractionV2",
+  "required": [
+    "operation",
+    "target",
+    "filters",
+    "group_by",
+    "order_by",
+    "limit",
+    "status",
+    "clarification"
+  ],
+  "status_values": [
+    "ambiguous",
+    "conflicting",
+    "insufficient_information",
+    "valid"
+  ],
+  "operation_values": [
+    "average",
+    "count",
+    "max",
+    "min",
+    "select",
+    "sum"
+  ],
+  "operator_values": [
+    "between",
+    "contains",
+    "eq",
+    "gt",
+    "gte",
+    "in",
+    "lt",
+    "lte",
+    "neq"
+  ],
+  "contract_rules": [
+    "status=valid requires operation and target",
+    "non-valid status requires null operation/target and non-null clarification"
+  ]
+}

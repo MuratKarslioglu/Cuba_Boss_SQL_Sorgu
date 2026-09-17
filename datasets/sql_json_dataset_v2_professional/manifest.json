@@ -1,0 +1,164 @@
+{
+  "name": "Turkish Real-World SQL-JSON Extraction Dataset",
+  "version": "2.0.0",
+  "seed": 20260915,
+  "total_examples": 18000,
+  "splits": {
+    "train": 12000,
+    "validation": 2000,
+    "test": 3000,
+    "challenge_test": 1000
+  },
+  "validation_passed": true,
+  "validation_error_count": 0,
+  "statistics": {
+    "train": {
+      "count": 12000,
+      "status": {
+        "valid": 11245,
+        "conflicting": 380,
+        "insufficient_information": 71,
+        "ambiguous": 304
+      },
+      "noise": {
+        "telegraphic": 1863,
+        "typo": 2182,
+        "clean": 2672,
+        "chat": 2776,
+        "verbose": 2507
+      },
+      "families": {
+        "maxmin": 234,
+        "negation": 505,
+        "multi_value": 2399,
+        "correction": 237,
+        "threshold": 1441,
+        "multi_filter": 925,
+        "complex": 1251,
+        "select": 943,
+        "average": 764,
+        "date": 705,
+        "negative/conflicting": 380,
+        "bottomn": 576,
+        "simple": 246,
+        "topn": 543,
+        "negative/insufficient": 44,
+        "adversarial/injection": 270,
+        "group": 206,
+        "negative/ambiguous": 304,
+        "negative/nonquery": 27
+      }
+    },
+    "validation": {
+      "count": 2000,
+      "status": {
+        "valid": 1843,
+        "ambiguous": 62,
+        "conflicting": 95
+      },
+      "noise": {
+        "chat": 569,
+        "clean": 182,
+        "typo": 447,
+        "telegraphic": 302,
+        "verbose": 500
+      },
+      "families": {
+        "multi_filter": 178,
+        "multi_value": 506,
+        "threshold": 214,
+        "select": 173,
+        "topn": 79,
+        "average": 134,
+        "complex": 251,
+        "adversarial/injection": 16,
+        "date": 123,
+        "negation": 63,
+        "negative/ambiguous": 62,
+        "bottomn": 74,
+        "negative/conflicting": 95,
+        "correction": 9,
+        "maxmin": 11,
+        "simple": 7,
+        "group": 5
+      }
+    },
+    "test": {
+      "count": 3000,
+      "status": {
+        "valid": 2732,
+        "ambiguous": 113,
+        "conflicting": 155
+      },
+      "noise": {
+        "chat": 883,
+        "verbose": 720,
+        "typo": 693,
+        "telegraphic": 414,
+        "clean": 290
+      },
+      "families": {
+        "select": 236,
+        "multi_value": 822,
+        "complex": 428,
+        "date": 182,
+        "threshold": 291,
+        "negative/ambiguous": 113,
+        "correction": 8,
+        "negation": 66,
+        "topn": 96,
+        "average": 183,
+        "adversarial/injection": 27,
+        "multi_filter": 286,
+        "negative/conflicting": 155,
+        "bottomn": 90,
+        "maxmin": 9,
+        "simple": 4,
+        "group": 4
+      }
+    },
+    "challenge_test": {
+      "count": 1000,
+      "status": {
+        "conflicting": 82,
+        "valid": 792,
+        "insufficient_information": 46,
+        "ambiguous": 80
+      },
+      "noise": {
+        "typo": 211,
+        "verbose": 223,
+        "chat": 248,
+        "clean": 154,
+        "telegraphic": 164
+      },
+      "families": {
+        "negative/conflicting": 82,
+        "threshold": 89,
+        "average": 40,
+        "negative/nonquery": 22,
+        "negation": 36,
+        "complex": 80,
+        "multi_value": 174,
+        "topn": 34,
+        "select": 42,
+        "adversarial/injection": 52,
+        "multi_filter": 47,
+        "simple": 28,
+        "negative/ambiguous": 80,
+        "negative/insufficient": 24,
+        "correction": 25,
+        "bottomn": 38,
+        "date": 42,
+        "maxmin": 34,
+        "group": 31
+      }
+    }
+  },
+  "notes": [
+    "challenge_test must never be used for training",
+    "global exact-input uniqueness enforced",
+    "V2 includes rejection/clarification behavior",
+    "synthetic ontology must later be adapted to employer schema"
+  ]
+}

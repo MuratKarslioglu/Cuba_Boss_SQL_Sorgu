@@ -1,0 +1,8 @@
+# Faz 1 + Faz 2 icin yeterli olan minimum bagimlilik seti.
+# Sema, dataset dogrulama ve formatlama katmanlari torch gerektirmez.
+pydantic>=2.7,<3
+pydantic-settings>=2.2,<3
+
+# Harici SQL->JSON donusum pipeline'i (scripts/import_external_sql_dataset.py)
+# icin - saf Python, DB baglantisi/torch gerektirmez.
+sqlglot>=25.0,<26
