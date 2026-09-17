@@ -21,8 +21,13 @@ models/*
 # Benchmark ciktilari
 benchmarks/
 
-# Dataset dosyalari repoda tutulmaz (ayrica saglanir)
-datasets/*.jsonl
+# Dataset dosyalari repoda tutulmaz (ayrica saglanir).
+# `**` alt klasorleri de kapsar -- `datasets/*.jsonl` yalnizca datasets/'in
+# DOGRUDAN icindeki dosyalari yakalar, alt klasorleri (ör. datasets/sql_json_
+# dataset_v2_professional/train.jsonl) KACIRIR; bu yuzden bir kez yanlislikla
+# commit'lenmislerdi.
+datasets/**/*.jsonl
+datasets/**/*.jsonl.orig
 
 # Harici (Kaggle/GitHub) kaynakli ham/donusturulmus veri - lisans netlesene kadar
 # hicbir zaman commit edilmez (bkz. datasets/external/LICENSE_NOTES.md)
